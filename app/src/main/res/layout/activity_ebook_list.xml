@@ -1,0 +1,371 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/primaryTextColor"
+            android:elevation="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/textInputEmail"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent">
+
+                        <EditText
+                            android:id="@+id/searchAll"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_margin="5dp"
+                            android:background="@android:color/transparent"
+                            android:drawableLeft="@android:drawable/ic_search_category_default"
+                            android:ems="10"
+                            android:hint="Find Your ebook"
+                            android:maxLines="1"
+                            android:textSize="12sp"
+                            android:textColor="@color/whiteTextColor"
+                            tools:ignore="SpeakableTextPresentCheck"></EditText>
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </androidx.appcompat.widget.Toolbar>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="5dip"
+            android:elevation="5dip">
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="?android:attr/listPreferredItemHeight"
+                android:padding="6dip">
+                <ImageView
+                    android:id="@+id/iconOne"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginRight="6dip"
+                    android:contentDescription="TODO"
+                    android:src="@drawable/ic_ebook_read" />
+
+                <TextView
+                    android:id="@+id/secondLineOne"
+                    android:layout_width="fill_parent"
+                    android:layout_height="26dip"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_toRightOf="@id/iconOne"
+                    android:ellipsize="marquee"
+                    android:singleLine="true"
+                    android:text="Description"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/firstLineOne"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@id/secondLineOne"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignWithParentIfMissing="true"
+                    android:layout_toRightOf="@id/iconOne"
+                    android:gravity="center_vertical"
+                    android:text="Example Ebook"
+                    android:textSize="16sp" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="5dip"
+            android:elevation="5dip">
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="?android:attr/listPreferredItemHeight"
+                android:padding="6dip">
+                <ImageView
+                    android:id="@+id/iconTwo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginRight="6dip"
+                    android:contentDescription="TODO"
+                    android:src="@drawable/ic_ebook_read" />
+
+                <TextView
+                    android:id="@+id/secondLineTwo"
+                    android:layout_width="fill_parent"
+                    android:layout_height="26dip"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_toRightOf="@id/iconTwo"
+                    android:ellipsize="marquee"
+                    android:singleLine="true"
+                    android:text="Description"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/firstLineTwo"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@id/secondLineTwo"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignWithParentIfMissing="true"
+                    android:layout_toRightOf="@id/iconTwo"
+                    android:gravity="center_vertical"
+                    android:text="Example Ebook"
+                    android:textSize="16sp" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="5dip"
+            android:elevation="5dip">
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="?android:attr/listPreferredItemHeight"
+                android:padding="6dip">
+                <ImageView
+                    android:id="@+id/iconThree"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginRight="6dip"
+                    android:contentDescription="TODO"
+                    android:src="@drawable/ic_ebook_read" />
+
+                <TextView
+                    android:id="@+id/secondLineThree"
+                    android:layout_width="fill_parent"
+                    android:layout_height="26dip"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_toRightOf="@id/iconThree"
+                    android:ellipsize="marquee"
+                    android:singleLine="true"
+                    android:text="Description"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/firstLineThree"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@id/secondLineThree"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignWithParentIfMissing="true"
+                    android:layout_toRightOf="@id/iconThree"
+                    android:gravity="center_vertical"
+                    android:text="Example Ebook"
+                    android:textSize="16sp" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="5dip"
+            android:elevation="5dip">
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="?android:attr/listPreferredItemHeight"
+                android:padding="6dip">
+                <ImageView
+                    android:id="@+id/iconFour"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginRight="6dip"
+                    android:contentDescription="TODO"
+                    android:src="@drawable/ic_ebook_read" />
+
+                <TextView
+                    android:id="@+id/secondLineFour"
+                    android:layout_width="fill_parent"
+                    android:layout_height="26dip"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_toRightOf="@id/iconFour"
+                    android:ellipsize="marquee"
+                    android:singleLine="true"
+                    android:text="Description"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/firstLineFour"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@id/secondLineFour"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignWithParentIfMissing="true"
+                    android:layout_toRightOf="@id/iconFour"
+                    android:gravity="center_vertical"
+                    android:text="Example Ebook"
+                    android:textSize="16sp" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="5dip"
+            android:elevation="5dip">
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="?android:attr/listPreferredItemHeight"
+                android:padding="6dip">
+                <ImageView
+                    android:id="@+id/iconFive"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginRight="6dip"
+                    android:contentDescription="TODO"
+                    android:src="@drawable/ic_ebook_read" />
+
+                <TextView
+                    android:id="@+id/secondLineFive"
+                    android:layout_width="fill_parent"
+                    android:layout_height="26dip"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_toRightOf="@id/iconFive"
+                    android:ellipsize="marquee"
+                    android:singleLine="true"
+                    android:text="Description"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/firstLineFive"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@id/secondLineFive"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignWithParentIfMissing="true"
+                    android:layout_toRightOf="@id/iconFive"
+                    android:gravity="center_vertical"
+                    android:text="Example Ebook"
+                    android:textSize="16sp" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="5dip"
+            android:elevation="5dip">
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="?android:attr/listPreferredItemHeight"
+                android:padding="6dip">
+                <ImageView
+                    android:id="@+id/iconSix"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginRight="6dip"
+                    android:contentDescription="TODO"
+                    android:src="@drawable/ic_ebook_read" />
+
+                <TextView
+                    android:id="@+id/secondLineSix"
+                    android:layout_width="fill_parent"
+                    android:layout_height="26dip"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_toRightOf="@id/iconSix"
+                    android:ellipsize="marquee"
+                    android:singleLine="true"
+                    android:text="Description"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/firstLineSix"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@id/secondLineSix"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignWithParentIfMissing="true"
+                    android:layout_toRightOf="@id/iconSix"
+                    android:gravity="center_vertical"
+                    android:text="Example Ebook"
+                    android:textSize="16sp" />
+            </RelativeLayout>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="12"
+            android:gravity="center"
+            android:layout_marginTop="30dp">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:background="@color/colorPrimaryDark"
+                android:layout_weight="3"/>
+
+            <TextView
+                style="@style/viewParent.headerText.NoMode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1 2 3 4 ...."
+                android:layout_weight="6"
+                android:textSize="12sp"
+                android:textAlignment="center"/>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:background="@color/colorPrimaryDark"
+                android:layout_weight="3"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>
